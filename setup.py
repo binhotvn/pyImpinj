@@ -14,43 +14,35 @@ from codecs import open
 
 here = path.abspath(path.dirname(__file__))
 
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+with open(path.join(here, "README.rst"), encoding="utf-8") as f:
     long_description = f.read()
-    long_description = long_description.replace('\r', '')
+    long_description = long_description.replace("\r", "")
 
 setup(
-    name='pyImpinj',
-    version='1.2',
-
-    description='Library for Impinj R2000 Reader',
+    name="pyImpinj",
+    version="1.2",
+    description="Library for Impinj R2000 Reader",
     long_description=long_description,
-
-    url='https://github.com/hex-in/pyImpinj',
-    author='Heyn',
-    author_email='heyunhuan@gmail.com',
-
-    license='MIT',
-    platforms='any',
-
+    url="https://github.com/hex-in/pyImpinj",
+    author="Heyn",
+    author_email="heyunhuan@gmail.com",
+    license="MIT",
+    platforms="any",
     classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
-        'Topic :: Software Development :: Build Tools',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: Implementation :: CPython',
-        'Programming Language :: Python :: Implementation :: PyPy',
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Build Tools",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Programming Language :: Python :: Implementation :: PyPy",
     ],
-
     include_package_data=True,
-
-    keywords=['Impinj', 'R2000'],
-    packages=['pyImpinj'],
-
-    install_requires=[ 'pyserial == 3.4', 'libscrc == 0.1.6' ],
-
+    keywords=["Impinj", "R2000"],
+    packages=["pyImpinj"],
+    install_requires=["pyserial == 3.4", "libscrc == 1.8.1"],
 )
