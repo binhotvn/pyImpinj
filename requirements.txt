@@ -1,2 +1,2 @@
-libscrc 
+libscrc==1.8.1
 pyserial 
